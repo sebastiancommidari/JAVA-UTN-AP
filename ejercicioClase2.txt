@@ -31,6 +31,8 @@ modifique algo DISTINTO en su copia local y haga un commit de dichos cambios.
 * En pocas palabras al hacer el PULL y git hace un MERGE automático se produce un conflicto, ya que hubo distintas modificaciones en el mismo archivo de los dos repositorios y hay que editarlo a gusto y luego hacer un COMMIT para cerrar el MERGE que había quedado interrumpido.
 
 
+Link a repositorio https://github.com/sebastiancommidari/JAVA-UTN-AP
+
 
 P.D. Dejo una respuesta de StackOverflow que me pareció genial...
 
