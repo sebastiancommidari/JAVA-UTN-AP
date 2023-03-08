@@ -1,5 +1,46 @@
-Prueba punto 3.
-El push fue punto 4.
-Agrego algo desde Github punto 5.
-Punto 7
+RESPUESTAS GUIA DE EJERCICIOS 2
+
+1. Si aún no lo hizo, cree una cuenta en Github (o Gitlab si prefiere), e instale y configure
+el cliente de GIT que va a utilizar (colocando su nombre y dirección de correo
+electrónico), por ejemplo GitHub Desktop.
+2. Cree un repositorio remoto nuevo, sin ningún archivo y clonelo localmente.
+3. Localmente, agregue un archivo txt, con un texto cualquiera, haga su primer commit y
+verifique que NO esté en el repositorio remoto. ¿Por qué no está?
+
+
+* Falta hacer un PUSH para subir los cambios del repo local al remoto. (el archivo .txt en este caso).
+
+
+4. Ahora haga el push correspondiente y verifique que si esté
+5. Modifique el archivo desde la interfaz web de Github, verifique que dicho cambio NO
+está aplicado localmente ¿Por qué no está?
+
+
+* Falta hacer un PULL para traer los cambios del repo remoto al local.
+
+
+
+6. Ahora ejecute el comando correspondiente para traer los cambios y verifique que son
+visibles.
+7. Vuelva a modificar el archivo desde la interfaz web de Github, y antes de hacer el pull,
+modifique algo DISTINTO en su copia local y haga un commit de dichos cambios.
+8. Ahora pruebe hacer un push de sus cambios. ¿Qué sucedió? ¿ cómo puede proseguir?
+9. Arregle el problema
+
+
+* En pocas palabras al hacer el PULL y git hace un MERGE automático se produce un conflicto, ya que hubo distintas modificaciones en el mismo archivo de los dos repositorios y hay que editarlo a gusto y luego hacer un COMMIT para cerrar el MERGE que había quedado interrumpido.
+
+
+
+P.D. Dejo una respuesta de StackOverflow que me pareció genial...
+
+"Si haces un git add y git commit en este momento, guardarás en tu rama local todos tus cambios. Al hacer después un pull, se traerán los cambios de la rama remota y git hará automáticamente un merge entre ambas ramas, creando un nuevo commit que registra la mezcla de todo (y que de momento estará sólo en tu rama local).
+
+Es posible que al intentar hacer hacer el merge se produzcan conflictos. Esto ocurrirá si los mismos ficheros que han sido modificados en tu rama local también han sido modificados en la rama remota. Si las modificaciones afectan a ficheros diferentes no habrá conflictos y lo que tendrás en local será el resultado final, conteniendo tanto tus cambios como los que has bajado con pull.
+
+En caso de conflicto el merge no se completa, sino que queda "a medias". Debes entonces editar los ficheros en conflicto. Tendrán marcas señalando qué partes se cambiaron en local y cuáles en remoto. Examina los cambios, y modifica el fichero para eliminar esas marcas y dejar sólo la parte que te interese (local o remota). Una vez todos los ficheros en conflicto han sido editados y han quedado a tu gusto, harás un commit, que causará que el merge interrumpido se complete.
+
+Al final de lo anterior (tanto si hubo conflictos como si no), tienes un repositorio "arreglado", que contiene tus cambios más los remotos y que has dejado a tu gusto. Si examinas la historia de este repositorio verás que contiene como commit más reciente uno en el que se juntan dos ramas: una de ellas tendrá tus commits locales y la otra los cambios commits remotos que habían bajado con el pull. Este es el commit del merge que git creó automáticamente.
+
+Si en este momento haces un push, se enviará al repositorio remoto lo que faltaba en aquél, es decir, los commits locales y el commit del merge. En este punto tu repositorio local y el remoto tendrán ya la misma historia y todo estará arreglado."
 
