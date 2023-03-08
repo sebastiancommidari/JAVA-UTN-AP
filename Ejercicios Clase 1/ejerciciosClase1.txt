@@ -1,6 +1,8 @@
 public class Guia1 {
 	public static void main(String[] args) {
 
+		//Link Github: https://github.com/sebastiancommidari/JAVA-UTN-AP/tree/main/Ejercicios%20Clase%201/guia1AP-UTN
+
 		// PUNTO 1 - A
 
 		System.out.println("Numeros de 1 al 100 con WHILE:");
